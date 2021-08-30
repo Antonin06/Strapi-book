@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "books",
+  "collectionName": "categories",
   "info": {
-    "name": "Book",
+    "name": "category",
     "description": ""
   },
   "options": {
@@ -12,36 +12,24 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string",
       "required": true
     },
-    "author": {
-      "type": "string"
+    "books": {
+      "via": "categories",
+      "collection": "book",
+      "dominant": true
     },
-    "thumbnail": {
+    "logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "shops": {
-      "via": "books",
-      "collection": "shop"
-    },
-    "categories": {
-      "via": "books",
-      "collection": "category"
-    },
-    "description": {
-      "type": "string",
-      "required": true
     }
   }
 }

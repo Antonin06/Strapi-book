@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/favorite-books",
+      "handler": "favorite-book.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favorite-books/count",
+      "handler": "favorite-book.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favorite-books/:id",
+      "handler": "favorite-book.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/favorite-books",
+      "handler": "favorite-book.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/favorite-books/:id",
+      "handler": "favorite-book.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/favorite-books/:id",
+      "handler": "favorite-book.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

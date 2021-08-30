@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_books",
+  "info": {
+    "name": "Favorite Book",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "books": {
+      "collection": "book"
+    }
+  }
+}
