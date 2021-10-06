@@ -59,8 +59,13 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "favorite_books": {
-      "collection": "favorite-book"
+    "comments": {
+      "via": "authorComment",
+      "collection": "comment"
+    },
+    "favorites": {
+      "via": "authorFavorite",
+      "collection": "favorite"
     }
   }
 }

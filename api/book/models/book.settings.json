@@ -40,7 +40,32 @@
       "collection": "category"
     },
     "description": {
+      "type": "text",
+      "required": true
+    },
+    "comments": {
+      "via": "book",
+      "collection": "comment"
+    },
+    "favorites": {
+      "via": "book",
+      "collection": "favorite"
+    },
+    "shortDescription": {
       "type": "string",
+      "required": true
+    },
+    "aboutAuthor": {
+      "type": "text",
+      "required": true
+    },
+    "pages": {
+      "type": "string",
+      "required": true
+    },
+    "langue": {
+      "type": "string",
+      "unique": false,
       "required": true
     }
   }

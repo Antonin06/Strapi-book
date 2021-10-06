@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "favorite_books",
+  "collectionName": "comments",
   "info": {
-    "name": "Favorite Book",
+    "name": "comment",
     "description": ""
   },
   "options": {
@@ -12,11 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "content": {
       "type": "string"
     },
-    "books": {
-      "collection": "book"
+    "book": {
+      "via": "comments",
+      "model": "book"
+    },
+    "authorComment": {
+      "via": "comments",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
